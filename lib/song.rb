@@ -45,11 +45,11 @@ class Song
     end
 
     def self.genre_count
-        @@genres.tally
+       p @@genres.tally
     end
 
     def self.artist_count
-        @@artists.tally
+        p @@artists.tally
     end
 end
 
@@ -65,5 +65,9 @@ yes = Song.new('No', 'Blue', 'Melodic')
 p yes.count
 p yes.genres
 
+no = Song.new('No', 'Blue', 'Melodic')
+p no.count
+p no.genres
 
 
+Song.genre_count
